@@ -1,0 +1,4 @@
+C:/Users/olegb/PP/lab1/build/CMakeFiles/lab1.dir
+C:/Users/olegb/PP/lab1/build/CMakeFiles/lab1py.dir
+C:/Users/olegb/PP/lab1/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/olegb/PP/lab1/build/CMakeFiles/ZERO_CHECK.dir

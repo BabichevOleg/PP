@@ -1,0 +1,24 @@
+^C:\USERS\OLEGB\PP\LAB1\BUILD\CMAKEFILES\DAF9B4B54BEDD445CD1EC59A7F0FF0BB\RUN_CHECK_SCRIPT.RULE
+setlocal
+cd C:\Users\olegb\PP\lab1
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+python C:/Users/olegb/PP/lab1/check.py
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\OLEGB\PP\LAB1\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/olegb/PP/lab1 -BC:/Users/olegb/PP/lab1/build --check-stamp-file C:/Users/olegb/PP/lab1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
